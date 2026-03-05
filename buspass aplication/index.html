@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC Application</title>
+</head>
+<body>
+    <fieldset >
+    <h1>TELANGANA STATE ROAD CORPORATION</h1>
+    <h2>GENERAL APPLICATION</h2>
+    </fieldset>
+    <form action="./index2.html">
+        <fieldset>
+            <legend><b>Applicant Details</b></legend>
+            <table  cellpadding="10px" >
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                    <td><label for="father">Father's/Guadian's Name</label></td>
+                    <td><input type="text" name="father" id="father"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                    <td><label for="gender">Gender </label></td>
+                    <td><input type="radio" name="gender" id="gender" value="male">Male
+                        <input type="radio" name="gender" id="gender" value ="female">Female
+                    </td>
+                </tr> 
+                <tr>
+                    <td><label for="age">Age as On</label></td>
+                    <td><input type="text" id="age" name="age"></td>
+                    <td><label for="adhar">Aadhaar Number</label></td>
+                    <td><input type="text" id="adhar" name="adhar"></td>
+                </tr>
+                <tr>
+                    <td><label for="whatappnumber">whatsApp No</label></td>
+                    <td><input type="text" id="whatappnumber" name="whatappnumber"></td>
+                    <td><label for="gmail">Gmail</label></td>
+                    <td><input type="email" id="gmail" name="gmail"></td>
+                </tr>
+                <tr><td><label for="file">Upload Photo</label></td>
+                <td><input type="file" id="file" name="file"></td></tr> 
+                
+            </table>
+
+        
+        </fieldset>
+        <fieldset>
+            <legend><b>Residential Address Details</b></legend>
+                <table cellpadding="10px">
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><textarea name="address" id="address"></textarea></td>
+                        <td><label for="District">District</label></td>
+                        <td>
+                            <select name="District" id="District">
+                                <option>Hyderabad</option>
+                                <option>Delhi</option>
+                                <option>Mumbai</option>
+                                <option>Bangalore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="madal">Mandal</label></td>
+                        <td><input type="text" id="madal" name="madal"></td>
+                            <td><label for="village">Village</label></td>
+                        <td><input type="text" id="village" name="village"></td>    
+
+                    </tr>
+                <tr><td><label for="pincode">Pin Code</label></td>
+                    <td><input type="text" id="pincode" name="pincode"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Pass Type Details</b></legend>
+            <table>
+                <tr><td><label for="city">City</label></td>
+                    <td>
+                        <select name="city" id="city">
+
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>  
+                            <option value="Bangalore">Bangalore</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td><label for="passtype">Pass Type</label></td>
+                    <td><select name="passtype" id="passtype">
+                        <option selected disabled>----select----</option>
+                        <option value="GREATER">GREATER PASS</option>
+                        <option value="ORDINARY">GENERAL ORDINARY PASS</option>
+                        <option value="METRO">GENERAL METRO ROUTE PASS</option>
+                        <option value="EXPRESS">EXPRESS PASS</option>
+                    </select></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Mode of Payment & Pass collection</b></legend>
+            <table cellPadding="10px">
+                <tr><td><label for="mode">Payment Mode</label></td>
+                    <td><select name="mode" id="mode">
+                        <option selected disabled>select mode of payment</option>
+                        <option value="online">ONLINE</option>
+                        <option value="offline">AT COUNTER</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="deliverymode">Pass Delivery Mode</label></td>
+                    <td><select name="deliverymode" id="deliverymode">
+                        <option selected disabled>select delivery mode</option>
+                        <option value="home">HOME DELIVERY</option>
+                        <option value="counter">AT COUNTER</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="center">Center at which you want to collect the pass</label></td>
+                    <td><select name="center" id="center">
+                        <option selected disabled>select center</option>
+                        <option value="rtc_abids">RTC HYD-ABIDS</option>
+                        <option value="rtc_mehdipatnam">RTC MEHDIPATNAM</option>
+                        <option value="rtc_kukatpally">RTC KUKATPALLY</option>
+                        <option value="rtc_secunderabad">RTC SECUNDERABAD</option>  
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <img src="./captcha-test-simple-example.png" alt="">
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>
